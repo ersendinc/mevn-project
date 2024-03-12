@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="full-section-height">
         <div class="container">
             <form class="mt-5" @submit.prevent="submitForm">
           <div class="row justify-content-center">
@@ -50,12 +50,14 @@ export default {
             }
         }
     },
-//     methods:{
-//         updateGender(newGender){
-// this.formData.gender = newGender
-//         }
-//     }
+methods:{
+  submitForm(){
+    console.log("registerformData::", this.formData)
+  }
+  }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+
+</style>

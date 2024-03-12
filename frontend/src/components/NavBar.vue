@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-md custom-nav">
-        <div class="container">
+        <div class="container ">
             <RouterLink class="navbar-brand" :to="{ name: 'home' }">{{ message }}</RouterLink>
             <ul class=" navbar-nav">
                 <li class="nav-item">
@@ -36,31 +36,24 @@ export default {
 </script>
 
 <style scoped>
+
 .custom-nav {
-    background-color: #bfa1a0;
-    padding: 15px 0;
+    background-color: var(--primary-color);
 }
 
-.navbar-brand {
-
+.navbar-brand{
     padding: 0;
     margin: 0;
-    color: #ffffff;
+    color: white;
     font-size: 24px;
     font-weight: bold;
 }
-
-.nav-link {
-    padding: 10px 15px !important;
-    color: #ffffff;
-    text-align: center;
-}
-
 .nav-link:hover{
-    color: #44b89d;
+    color:var(--secondary-color)
 }
 .active-link{
-    color: #44b89d;
-
+    color:var(--secondary-color)
 }
+
+
 </style>
